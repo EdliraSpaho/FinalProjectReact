@@ -1,4 +1,4 @@
-import { Avatar, Card } from 'antd';
+import { Card } from 'antd';
 import { useNavigate } from 'react-router-dom';
 
 import styles from './Styles.module.css';
@@ -19,21 +19,14 @@ const FilmCard: React.FC<Props> = ({
   const { Meta } = Card;
 
   const navigate = useNavigate();
-
-  const filmInitials = title?.split(" ").map((n)=>n[0]).join(".");
-
   return (
     <Card 
       hoverable
       onClick={() => navigate(id)}
       className={styles.filmCard}
+      cover={<img src={imageUrl} alt="film image" />}
     >
       <Meta
-        avatar={
-          imageUrl
-          ? <Avatar src={imageUrl} />
-          : <Avatar>{filmInitials}</Avatar>
-        }
         title={title}
         description={director}
       />

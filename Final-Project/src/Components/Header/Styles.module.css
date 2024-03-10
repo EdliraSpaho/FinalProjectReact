@@ -16,7 +16,7 @@
   
   .searchButton {
     background-color:rgb(184, 180, 180);
-   color: aqua;
+   color: whitesmoke;
     padding: 5px 70px;
     border: none;
     border-radius: 20px;
@@ -33,7 +33,7 @@
   }
   
   .linksContainer h1 a {
-    color: aqua;
+    color:whitesmoke;
     margin-right: 20px;
     text-decoration: none;
   }

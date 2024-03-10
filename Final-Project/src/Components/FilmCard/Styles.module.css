@@ -1,4 +1,10 @@
 .filmCard{
-    width: 400px;
+    width: 240px;
+    border-radius: 20px;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
   }
-  
+  .filmCard:hover {
+    background-color: azure;
+  }
