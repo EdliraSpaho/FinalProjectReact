@@ -1,5 +1,5 @@
 
-  import Axios, { AxiosError, AxiosResponse } from 'axios';
+import Axios, { AxiosError, AxiosResponse } from 'axios';
 import { Film, GenericError } from './types';
 
 const getSingleFilm = async (filmId: string): Promise<Film[]> => {

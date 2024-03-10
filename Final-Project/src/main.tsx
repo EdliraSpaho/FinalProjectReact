@@ -12,10 +12,10 @@ import {
 } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
-import App from './App';
-import FilmDetails from './Components/pages/FilmDetails';
 import FilmsRegistry from './Components/pages/FilmsRegistry';
+import FilmDetails from './Components/pages/FilmDetails';
 
+import App from './App';
 const queryClient = new QueryClient();
 
 const router = createBrowserRouter([

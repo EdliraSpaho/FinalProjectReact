@@ -14,7 +14,7 @@ import { Link, Outlet } from 'react-router-dom';
 const App = () => {
   return (
     <div>
-      <h1>This is a navbar: <Link to={'films'}>View Register</Link></h1>
+      <h1>Home  <Link to={'films'}>The Studio Ghibli Collection</Link></h1>
       <Outlet />
       <footer>Footer</footer>
     </div>

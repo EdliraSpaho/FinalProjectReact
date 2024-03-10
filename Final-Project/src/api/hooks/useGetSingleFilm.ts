@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 
 
-import Keys from '../../requests/key';
+import Keys from '../../requests/keys';
 import getSingleFilm from '../../requests/getSingleFilm';
 const useGetSingleFilm = (filmId: string) =>
   useQuery({

@@ -8,10 +8,10 @@ export type Film = {
     description: string;
     director: string;
     release_date: string;
-    running_time: boolean;
+    running_time: string;
     actor: string;
     image: string;
-    rt_score:string;
+    rt_score: string;
   };
   
   export type GenericError = {

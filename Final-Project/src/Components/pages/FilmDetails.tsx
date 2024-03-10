@@ -1,6 +1,4 @@
 import { useParams } from 'react-router-dom';
-
-
 import useGetSingleFilm from '../../api/hooks/useGetSingleFilm';
 import FilmDescriptions from '../FilmDescription/Presentational';
 
@@ -18,11 +16,9 @@ const FilmDetails = () => {
       original_title_romanised={filmDetails?.[0]?.original_title_romanised}
       movie_banner={filmDetails?.[0]?.movie_banner}
       description={filmDetails?.[0]?.description}
-      director={filmDetails?.[0]?.director}
       release_date={filmDetails?.[0]?.release_date}
       running_time={filmDetails?.[0]?.running_time.toString()} 
       actor={filmDetails?.[0]?.actor}
-      image={filmDetails?.[0]?.image}
       rt_score={filmDetails?.[0]?.rt_score}
     />
   )

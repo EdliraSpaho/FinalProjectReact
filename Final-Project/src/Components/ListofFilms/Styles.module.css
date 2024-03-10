@@ -1,6 +1,17 @@
-.filmDetails{
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
+.listOfFilmsContainer{
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.title{
+  text-align: center;
+  margin: 10px 0;
+}
+
+.filmsGrid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  column-gap: 20px;
+  row-gap: 40px;
+}

@@ -7,7 +7,7 @@ const ListOfFilms = () => {
 
   return (
     <div className={styles.listOfFilmsContainer}>
-      <h1 className={styles.title}>Ghilbi films list</h1>
+      <h1 className={styles.title}>Ghilbi Films List</h1>
       <div className={styles.filmsGrid}>
       {
         listOfFilms?.map((film) => (

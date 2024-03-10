@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import Keys from '../../requests/key';
+import Keys from '../../requests/keys';
 import getFilms from '../../requests/getFilms';
 const useGetFilms = () =>
   useQuery({

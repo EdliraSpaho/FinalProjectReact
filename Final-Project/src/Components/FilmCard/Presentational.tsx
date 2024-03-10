@@ -6,8 +6,8 @@ import styles from './Styles.module.css';
 interface Props {
   id: string;
   title: string;
-  director: string
-  imageUrl: string
+  director: string;
+  imageUrl: string;
 }
 
 const FilmCard: React.FC<Props> = ({
