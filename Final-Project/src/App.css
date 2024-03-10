@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif; /* Zgjidhni një familje fontesh që preferoni */
-  background-color: #f0f0f0; /* Ngjyra e sfondit */
+  font-family: Arial, sans-serif; 
+  background-color: #f0f0f0; 
 }
 
 .container {
@@ -12,7 +12,7 @@ body {
 }
 
 .header {
-  background-color: #333; 
+  background-color: rgb(0, 0, 0); 
   color: white;
   padding: 10px 20px;
 }
@@ -22,7 +22,7 @@ body {
 }
 
 .navbar {
-  background-color: #333;
+  background-color: #161414;
   color: white;
   padding: 10px;
 }

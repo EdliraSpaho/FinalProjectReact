@@ -1,0 +1,39 @@
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: small;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   background-color:rgb(23, 17, 17);
+  }
+  
+  .searchContainer {
+    margin-right: 20px; 
+   
+  }
+  
+  .searchButton {
+    background-color:rgb(184, 180, 180);
+   color: aqua;
+    padding: 5px 70px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: small;
+  }
+  
+  .searchButton:hover {
+    background-color: #475b71;
+  }
+  
+  .linksContainer {
+    display: flex;
+  }
+  
+  .linksContainer h1 a {
+    color: aqua;
+    margin-right: 20px;
+    text-decoration: none;
+  }
