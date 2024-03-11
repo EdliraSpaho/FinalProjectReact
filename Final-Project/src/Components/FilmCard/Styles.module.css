@@ -9,3 +9,9 @@
   .filmCard:hover {
     background-color: rgb(182, 244, 244);
   }
+  .likeButton {
+    position: absolute;
+    bottom: 40px; 
+    right: 10px; 
+  }
+  
