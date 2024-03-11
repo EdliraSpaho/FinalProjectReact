@@ -16,8 +16,9 @@ const ListOfFilms = () => {
             id={film?.id}
             title={film?.title}
             director={film?.director}
-            imageUrl={film?.image}
-          />
+            imageUrl={film?.image} onFavoriteToggle={function (id: string): void {
+              throw new Error('Function not implemented.');
+            } }          />
         ))
       }
       </div>
