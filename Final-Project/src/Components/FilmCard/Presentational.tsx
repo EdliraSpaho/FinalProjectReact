@@ -15,6 +15,7 @@ const FilmCard: React.FC<Props> = ({
   title,
   director,
   imageUrl
+  
 }) => {
   const { Meta } = Card;
 

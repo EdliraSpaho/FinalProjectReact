@@ -3,7 +3,7 @@ const Footer = () => {
   return (
     <div>
         <div className={styles.footerContainer}>
-        <p>@ 2024</p>
+        <p>@Ghibli 2024</p>
         </div>
       
     </div>

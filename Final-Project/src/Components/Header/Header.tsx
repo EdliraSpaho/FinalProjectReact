@@ -12,7 +12,7 @@ const Header = () => {
       </div>
       <div className={styles.linksContainer}>
         <h1><Link to={'films'}>Home</Link></h1>
-        <h1><Link to={''}>My Favorites</Link></h1>
+        <h1><Link to={''}>My Favorite</Link></h1>
       </div>
     </div>
   );
