@@ -1,5 +1,5 @@
 
-import ListOfFilms from '../ListOfFilms/Presentational';
+import ListOfFilms from '../ListOfilms/Presentational';
 const FilmsRegistry = () => {
    return (
     <ListOfFilms />
