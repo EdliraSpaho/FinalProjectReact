@@ -4,11 +4,6 @@
   margin-left: auto;
 }
 
-.title{
-  text-align: center;
-  margin: 10px 0;
-}
-
 .filmsGrid{
   display: grid;
   grid-template-columns: repeat(4,1fr);

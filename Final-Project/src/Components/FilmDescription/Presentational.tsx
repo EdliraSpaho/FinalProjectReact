@@ -1,92 +1,63 @@
-import {
-    Descriptions,
-    DescriptionsProps,
-  } from 'antd';
+import React from "react";
+import { Descriptions } from "antd";
+import styles from "./Styles.module.css";
+import { Button } from "antd/es/radio";
+interface Props {
+  title?: string;
+  original_title?: string;
+  original_title_romanised?: string;
+  movie_banner?: string;
+  description?: string;
+  release_date?: string;
+  running_time?: string;
+  rt_score?: string;
+  image?: string;
+}
+
+const FilmDescriptions: React.FC<Props> = ({
+  title,
+  original_title,
+  original_title_romanised,
+  movie_banner,
+  description,
+  release_date,
+  running_time,
+  rt_score,
+  image,
+}) => {
+  const handleBookNow = () => {
   
-  import styles from './Styles.module.css';
-  
-  interface Props {
-    title?: string;
-    original_title?: string;
-    original_title_romanised?: string;
-    movie_banner?: string;
-    description?: string;
-    release_date?: string;
-    running_time?: string;
-    actor?: string;
-    rt_score?:string;
-    image?:string
-  }
-  
-  const FilmDescriptions: React.FC<Props> = ({
-    title,
-    original_title,
-    original_title_romanised,
-    movie_banner,
-    description,
-    release_date,
-    running_time,
-    actor,
-    rt_score,
-    image,
-  }) => {
-    
-    const items: DescriptionsProps['items'] = [
-      {
-        key: '1',
-        label: 'Title',
-        children: <p>{title}</p>,
-      },
-      {
-        key: '2',
-        label: 'Original Title',
-        children: <p>{original_title}</p>,
-      },
-      {
-        key: '3',
-        label: 'Original Title Romanised',
-        children: <p>{original_title_romanised}</p>,
-      },
-      {
-        key: '4',
-        label: 'Movie Banner',
-        children: <p>{movie_banner}</p>,
-      },
-      {
-        key: '5',
-        label: 'Description',
-        children: <p>{description}</p>,
-      },
-      {
-        key: '6',
-        label: 'Release Date',
-        children: <p>{release_date}</p>,
-      },
-      
-      {
-        key: '7',
-        label: 'Running Time',
-        children: <p>{running_time}</p>,
-      },
-      {
-        key: '8',
-        label: 'Actor',
-        children: <p>{actor}</p>,
-      },
-      {
-        key: '9',
-        label: ' Rt Score',
-        children: <p>{rt_score}</p>,
-      },
-      {
-        key: '10',
-        label: ' Image',
-        children: <p>{image}</p>,
-      },
-    ];
-    
-    return <Descriptions className={styles.filmDetails} title="Film Details" bordered items={items} />;
+    console.log("Booking now...");
   };
-  
-  export default FilmDescriptions;
-  
+
+  return (
+    <Descriptions
+      className={styles.filmDetails}
+      title="Film Details"
+      bordered
+      column={1}
+    >
+<Descriptions.Item label="Movie Banner">
+  <img src={movie_banner} className={`${styles.smallImage} ${styles.image}`} alt="Film" />
+</Descriptions.Item>
+      <Descriptions.Item label="Title">{title}</Descriptions.Item>
+      <Descriptions.Item label="Original Title">
+        {original_title}
+      </Descriptions.Item>
+      <Descriptions.Item label="Original Title Romanised">
+        {original_title_romanised}
+      </Descriptions.Item>
+      <Descriptions.Item label="Description">{description}</Descriptions.Item>
+      <Descriptions.Item label="Release Date">{release_date}</Descriptions.Item>
+      <Descriptions.Item label="Running Time">{running_time}</Descriptions.Item>
+      <Descriptions.Item label="Rt Score">{rt_score}</Descriptions.Item>
+      <Descriptions.Item label="Book Now">
+        <Button type="primary" onClick={handleBookNow}>
+          Book Now
+        </Button>
+      </Descriptions.Item>
+    </Descriptions>
+  );
+};
+
+export default FilmDescriptions;

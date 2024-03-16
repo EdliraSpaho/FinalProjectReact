@@ -1,6 +1,10 @@
 .filmDetails{
-    width: 70%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
   }
-  
+
+.smallImage {
+  width: 100%;
+  height: auto;
+}

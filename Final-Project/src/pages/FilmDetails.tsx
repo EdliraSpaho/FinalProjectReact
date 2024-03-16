@@ -18,9 +18,7 @@ const FilmDetails = () => {
       description={filmDetails?.description}
       release_date={filmDetails?.release_date}
       running_time={filmDetails?.running_time.toString()} 
-      actor={filmDetails?.actor}
       rt_score={filmDetails?.rt_score}
-      image={filmDetails?.image}
     />
   )
 };
