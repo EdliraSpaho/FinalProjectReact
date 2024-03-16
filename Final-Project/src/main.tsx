@@ -12,8 +12,8 @@ import {
 } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
-import FilmsRegistry from './Components/pages/FilmsRegistry';
-import FilmDetails from './Components/pages/FilmDetails';
+import FilmsRegistry from './pages/FilmsRegistry';
+import FilmDetails from './pages/FilmDetails';
 
 import App from './App';
 const queryClient = new QueryClient();
