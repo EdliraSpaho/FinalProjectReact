@@ -37,17 +37,17 @@ import {
       },
       {
         key: '2',
-        label: 'Original_title',
+        label: 'Original Title',
         children: <p>{original_title}</p>,
       },
       {
         key: '3',
-        label: 'Original_title_romanised',
+        label: 'Original Title Romanised',
         children: <p>{original_title_romanised}</p>,
       },
       {
         key: '4',
-        label: 'Movie_banner',
+        label: 'Movie Banner',
         children: <p>{movie_banner}</p>,
       },
       {
@@ -57,13 +57,13 @@ import {
       },
       {
         key: '6',
-        label: 'Release_date',
+        label: 'Release Date',
         children: <p>{release_date}</p>,
       },
       
       {
         key: '7',
-        label: 'Running_time',
+        label: 'Running Time',
         children: <p>{running_time}</p>,
       },
       {
@@ -73,7 +73,7 @@ import {
       },
       {
         key: '9',
-        label: ' rt_score',
+        label: ' Rt Score',
         children: <p>{rt_score}</p>,
       },
     ];
