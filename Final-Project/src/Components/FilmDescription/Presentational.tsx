@@ -23,7 +23,6 @@ const FilmDescriptions: React.FC<Props> = ({
   release_date,
   running_time,
   rt_score,
-  image,
 }) => {
   const handleBookNow = () => {
   
