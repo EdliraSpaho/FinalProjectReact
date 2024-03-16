@@ -15,6 +15,7 @@ import {
     running_time?: string;
     actor?: string;
     rt_score?:string;
+    image?:string
   }
   
   const FilmDescriptions: React.FC<Props> = ({
@@ -27,6 +28,7 @@ import {
     running_time,
     actor,
     rt_score,
+    image,
   }) => {
     
     const items: DescriptionsProps['items'] = [
@@ -75,6 +77,11 @@ import {
         key: '9',
         label: ' Rt Score',
         children: <p>{rt_score}</p>,
+      },
+      {
+        key: '10',
+        label: ' Image',
+        children: <p>{image}</p>,
       },
     ];
     
