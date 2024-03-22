@@ -61,4 +61,11 @@
   font-family: "Times New Roman", Times, serif;
   font-weight: 400;
   font-style: normal;
+  margin-top: 20px;
+  cursor: pointer;
+  display: block; 
+  margin: 0 auto; 
+  justify-content:flex-end ;
 }
+
+
