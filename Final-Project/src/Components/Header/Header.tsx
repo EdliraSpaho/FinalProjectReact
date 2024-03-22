@@ -11,8 +11,9 @@ const Header = () => {
         </button>
       </div>
       <div className={styles.linksContainer}>
-        <h1><Link to={'films'}>Home</Link></h1>
+        <h1><Link to={'films'}>Ghibli Films</Link></h1>
         <h1><Link to={''}>My Favorite</Link></h1>
+        <h1><Link to={''}>My Tickets</Link></h1>
       </div>
     </div>
   );

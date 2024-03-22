@@ -1,56 +1,54 @@
-import { Card, Button } from 'antd';
-import { useNavigate } from 'react-router-dom';
-import { useState } from 'react';
-import styles from './Styles.module.css';
-import { HeartOutlined, HeartFilled } from '@ant-design/icons';
+import React, { useState } from "react";
+import { Card, Button } from "antd";
+import { useNavigate } from "react-router-dom";
+import { HeartOutlined, HeartFilled } from "@ant-design/icons";
+import styles from "./Styles.module.css";
+
 interface Props {
   id: string;
   title: string;
-  director: string;
   imageUrl: string;
-  onFavoriteToggle: (id: string) => void; 
+  onFavoriteToggle: (id: string) => void;
 }
 
 const FilmCard: React.FC<Props> = ({
   id,
   title,
-  director,
   imageUrl,
   onFavoriteToggle,
-  
 }) => {
   const { Meta } = Card;
   const navigate = useNavigate();
   const [isFavorite, setFavorite] = useState(false);
-  const [heartIcon, setHeartIcon] = useState(<HeartOutlined />);
-  
+
   const toggleFavorite = () => {
     setFavorite(!isFavorite);
     onFavoriteToggle(id);
-    setHeartIcon(isFavorite ? <HeartOutlined /> : <HeartFilled />); 
   };
 
-    
-    
-    return (
-    <Card 
-      hoverable
-      onClick={() => navigate(id)}
-      className={styles.filmCard}
-      cover={<img src={imageUrl} alt="film image" />}
-    >
-      <Meta
-        title={title}
-        description={director}
-      />
-      <Button 
-        className={styles.likeButton}
-        icon={heartIcon} 
-        onClick={toggleFavorite} 
-      />
+  const handleCardClick = () => {
+    navigate(`/films/${id}`, { state: { imageUrl } });
+  };
 
-    </Card>
-  )
+  return (
+    <div className={styles.cardContainer}>
+      <Card
+        hoverable
+        onClick={handleCardClick}
+        className={styles.filmCard}
+        cover={<img src={imageUrl} alt={title} />}
+      >
+        <Meta title={title} />
+        <div className={styles.likeButtonContainer}>
+          <Button
+            className={styles.likeButton}
+            icon={isFavorite ? <HeartFilled /> : <HeartOutlined />}
+            onClick={toggleFavorite}
+          />
+        </div>
+      </Card>
+    </div>
+  );
 };
 
 export default FilmCard;

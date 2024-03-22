@@ -1,10 +1,64 @@
-.filmDetails{
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.filmDescriptionContainer {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  background-color: hsl(213, 27%, 94%);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  font-family: "Times New Roman", Times, serif;
+}
 
-.smallImage {
+.filmImageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.filmTextContainer {
+  flex: 1;
+}
+
+.filmImage {
   width: 100%;
+  max-width: 100%;
   height: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filmDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.filmDetailsTitle {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: "Gwendolyn", cursive;
+  font-style: normal;
+}
+
+.detailLabel {
+  font-weight: bold;
+}
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Gwendolyn", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bookNowButton {
+  background-color: black;
+  border-color: black;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-style: normal;
 }
