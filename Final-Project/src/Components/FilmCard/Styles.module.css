@@ -1,17 +1,26 @@
-.filmCard{
-    width: 300px;
-    border-radius: 20px;
-    overflow: hidden;
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-    padding: 5px;
-  }
-  .filmCard:hover {
-    background-color: rgb(182, 244, 244);
-  }
-  .likeButton {
-    position: absolute;
-    bottom: 20px; 
-    right: 10px; 
-  }
-  
+.filmCard {
+  width: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  padding: 5px;
+  position: relative;
+}
+
+.filmCard:hover {
+  background-color: rgb(182, 244, 244);
+}
+
+.likeButton {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.active .anticon svg {
+  color: red;
+}

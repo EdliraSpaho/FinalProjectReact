@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import useGetSingleFilm from "../api/hooks/useGetSingleFilm";
-import { Modal, Button } from "antd";
-import Form, { ReservationFormData } from "../Components/Form/Form";
+import { Modal } from "antd";
+import Form, { ReservationFormData } from "../Components/Form/Form"; 
 import FilmDescriptions from "../Components/FilmDescription/Presentational";
-
 const FilmDetails: React.FC = () => {
   const { filmId } = useParams<{ filmId?: string }>();
   const { data: filmDetails } = useGetSingleFilm(filmId || "");
@@ -38,17 +37,6 @@ const FilmDetails: React.FC = () => {
         price={price}
         onBookNowClick={handleBookNowClick}
       />
-      <Button
-        onClick={handleBookNowClick}
-        style={{
-          marginTop: "10px",
-          backgroundColor: "black",
-          color: "white",
-          borderColor: "black",
-        }}
-      >
-        Book Now
-      </Button>
       <Modal
         title="Book Now"
         visible={showForm}

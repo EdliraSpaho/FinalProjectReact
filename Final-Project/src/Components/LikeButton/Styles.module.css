@@ -1,0 +1,14 @@
+.likeButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .likeButton:focus {
+    outline: none;
+  }
+  
+  .likeButton .active {
+    background-color: white;
+  }
+  

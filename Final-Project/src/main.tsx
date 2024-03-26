@@ -9,8 +9,11 @@ import FilmsRegistry from "./pages/FilmsRegistry";
 import FilmDetails from "./pages/FilmDetails";
 
 import App from "./App";
+import MyTickets from "./pages/MyTickets";
+import MyFavorite from "./pages/MyFavorite";
 const queryClient = new QueryClient();
 
+// Ndryshime në konfiguracionin e router-it
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,6 +26,14 @@ const router = createBrowserRouter([
       {
         path: "films/:filmId",
         element: <FilmDetails />,
+      },
+      {
+        path: "myfavorite",
+        element: <MyFavorite favoriteFilmsIds={[]} />,
+      },
+      {
+        path: "films",
+        element: <MyTickets />,
       },
     ],
   },

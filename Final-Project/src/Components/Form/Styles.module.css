@@ -7,16 +7,10 @@
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
   font-family: "Times New Roman", Times, serif;
 }
-
-.form {
+.form, .formGroup {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
-}
-
-.formGroup {
-  display: flex;
-  flex-direction: column;
 }
 
 .input {
@@ -25,12 +19,6 @@
   border-radius: 4px;
   border: 1px solid #ccc;
 }
-
-.buttonContainer {
-  display: flex;
-  justify-content: center;
-}
-
 .button {
   padding: 10px;
   background-color: #0a0d0f;
@@ -40,5 +28,4 @@
   cursor: pointer;
   display: block;
   margin: 0 auto;
-  font-family: "Times New Roman", Times, serif;
 }

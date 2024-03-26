@@ -2,38 +2,36 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 20px;
-  font-size: small;
-  font-family: "Times New Roman", Times, serif;
+font-size: 10px;
+font-family: 'Times New Roman', Times, serif;
   background-color: rgb(23, 17, 17);
 }
 
-.searchContainer {
-  margin-right: 20px;
+.logoContainer {
+  display: flex;
+  align-items: center;
+  background-color: black;
 }
 
-.searchButton {
-  background-color: rgb(184, 180, 180);
-  color: whitesmoke;
-  padding: 5px 70px;
-  border: none;
+.logo {
+  width: 100px;
+  height: 80px;
+}
+
+.searchInput {
   border-radius: 20px;
-  cursor: pointer;
-  font-size: small;
-  font-family: "Times New Roman", Times, serif;
+  padding: 5px;
 }
-
-.searchButton:hover {
-  background-color: #475b71;
-}
-
 .linksContainer {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .linksContainer h1 a {
-  color: whitesmoke;
+  color: white;
   margin-right: 20px;
   text-decoration: none;
 }

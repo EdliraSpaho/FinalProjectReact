@@ -62,10 +62,7 @@
   font-weight: 400;
   font-style: normal;
   margin-top: 20px;
-  cursor: pointer;
-  display: block; 
-  margin: 0 auto; 
-  justify-content:flex-end ;
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
 }
-
-
