@@ -39,51 +39,47 @@ const FilmDescriptions: React.FC<Props> = ({
       <div className={styles.filmTextContainer}>
         <div className={styles.filmDetailsContainer}>
           <h2 className={styles.filmDetailsTitle}>Film Details</h2>
-          <div>
-            <p className={styles.detailLabel}>Title:</p>
-            <p className={styles.detailValue}>{title}</p>
+          <div className={styles.detailContainer}>
+            <span className={styles.detailLabel}>Title:</span>
+            <span className={styles.detailValue}>{title}</span>
           </div>
-          <div>
-            <p className={styles.detailLabel}>Description:</p>
-            <p className={styles.detailValue}>{description}</p>
+          <div className={styles.detailContainer}>
+            <span className={styles.detailLabel}>Description:</span>
+            <span className={styles.detailValue}>{description}</span>
           </div>
-          <div>
-            <p className={styles.detailLabel}>Original Title:</p>
-            <p className={styles.detailValue}>{original_title}</p>
+          <div className={styles.detailContainer}>
+            <span className={styles.detailLabel}>Original Title:</span>
+            <span className={styles.detailValue}>{original_title}</span>
           </div>
-          <div>
-            <p className={styles.detailLabel}>Original Title Romanised:</p>
-            <p className={styles.detailValue}>{original_title_romanised}</p>
+          <div className={styles.detailContainer}>
+            <span className={styles.detailLabel}>Original Title Romanised:</span>
+            <span className={styles.detailValue}>{original_title_romanised}</span>
           </div>
-          <div>
-            <p className={styles.detailLabel}>Director:</p>
-            <p className={styles.detailValue}>{director}</p>
+          <div className={styles.detailContainer}>
+            <span className={styles.detailLabel}>Director:</span>
+            <span className={styles.detailValue}>{director}</span>
           </div>
-          <div>
-            <p className={styles.detailLabel}>Producer:</p>
-            <p className={styles.detailValue}>{producer}</p>
+          <div className={styles.detailContainer}>
+            <span className={styles.detailLabel}>Producer:</span>
+            <span className={styles.detailValue}>{producer}</span>
           </div>
-          <div>
-            <p className={styles.detailLabel}>Release Date:</p>
-            <p className={styles.detailValue}>{release_date}</p>
+          <div className={styles.detailContainer}>
+            <span className={styles.detailLabel}>Release Date:</span>
+            <span className={styles.detailValue}>{release_date}</span>
           </div>
-          <div>
-            <p className={styles.detailLabel}>Running Time:</p>
-            <p className={styles.detailValue}>{running_time}</p>
+          <div className={styles.detailContainer}>
+            <span className={styles.detailLabel}>Running Time:</span>
+            <span className={styles.detailValue}>{running_time}</span>
           </div>
-          <div>
-            <p className={styles.detailLabel}>Rt Score:</p>
-            <p className={styles.detailValue}>{rt_score}</p>
+          <div className={styles.detailContainer}>
+            <span className={styles.detailLabel}>Rt Score:</span>
+            <span className={styles.detailValue}>{rt_score}</span>
           </div>
-          <div>
-            <p className={styles.detailLabel}>Price:</p>
-            <p className={styles.detailValue}>{price}</p>
+          <div className={styles.detailContainer}>
+            <span className={styles.detailLabel}>Price:</span>
+            <span className={styles.detailValue}>{price}</span>
           </div>
-          <Button
-            className={styles.bookNowButton}
-            onClick={onBookNowClick}
-
-          >
+          <Button className={styles.bookNowButton} onClick={onBookNowClick}>
             Book Now
           </Button>
         </div>

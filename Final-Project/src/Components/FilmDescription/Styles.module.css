@@ -12,14 +12,6 @@
 
 .filmImageContainer {
   flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-right: 20px;
-}
-
-.filmTextContainer {
-  flex: 1;
 }
 
 .filmImage {
@@ -29,6 +21,11 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.filmTextContainer {
+  flex: 1;
+  padding-left: 20px;
+}
+
 .filmDetailsContainer {
   display: flex;
   flex-direction: column;
@@ -36,22 +33,18 @@
 }
 
 .filmDetailsTitle {
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 10px;
   font-family: "Gwendolyn", cursive;
-  font-style: normal;
+
 }
 
 .detailLabel {
   font-weight: bold;
 }
-.detailsContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: "Gwendolyn", cursive;
-  font-weight: 400;
-  font-style: normal;
+
+.detailValue {
+  margin-bottom: 10px;
 }
 
 .bookNowButton {
@@ -61,8 +54,6 @@
   font-family: "Times New Roman", Times, serif;
   font-weight: 400;
   font-style: normal;
-  margin-top: 20px;
-  display: block;
-  margin: 0 auto;
-  justify-content: center;
+  margin: 10px auto; 
+  width: 50%; 
 }

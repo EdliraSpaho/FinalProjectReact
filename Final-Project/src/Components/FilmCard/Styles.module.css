@@ -9,18 +9,27 @@
 }
 
 .filmCard:hover {
-  background-color: rgb(182, 244, 244);
+  background-color: rgb(183, 214, 248);
+}
+
+.cardContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 16px;
 }
 
 .likeButton {
-  position: absolute;
-  bottom: 20px;
-  right: 10px;
   background: none;
   border: none;
   padding: 0;
+  color: black;
+  transition: color 0.3s;
 }
 
-.active .anticon svg {
+.likeButton.active {
   color: red;
 }

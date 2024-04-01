@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
           </a>
         </div>
         <div className={styles.footerCopyrightContainer}>
-          <p className={styles.footerCopyright}>Copyright @Ghibli{year}</p>
+          <p className={styles.footerCopyright}>Copyright @{year}</p>
         </div>
       </div>
     </footer>

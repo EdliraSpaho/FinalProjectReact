@@ -1,5 +1,6 @@
 
 export type Film = {
+  imageUrl: string;
   id: string;
   title: string;
   original_title: string;

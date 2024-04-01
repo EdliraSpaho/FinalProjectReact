@@ -32,7 +32,9 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
       <div className={styles.logoContainer}>
         <img src="/logo.png" alt="GhibliFilms Logo" className={styles.logo} />
       </div>
-      <div className={`${styles.searchContainer} ${styles.roundedSearchContainer}`}>
+      <div
+        className={`${styles.searchContainer} ${styles.roundedSearchContainer}`}
+      >
         <input
           type="text"
           placeholder="Search films..."
@@ -54,7 +56,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
           </Link>
         </h1>
         <h1>
-          <Link to={"MyTickets"}>
+          <Link to={"/mytickets"} className={styles.link}>
             <ProfileOutlined /> My Tickets
           </Link>
         </h1>

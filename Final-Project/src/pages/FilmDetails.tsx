@@ -1,22 +1,46 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom"; 
 import useGetSingleFilm from "../api/hooks/useGetSingleFilm";
 import { Modal } from "antd";
-import Form, { ReservationFormData } from "../Components/Form/Form"; 
+import Form, { ReservationFormData } from "../Components/Form/Form";
 import FilmDescriptions from "../Components/FilmDescription/Presentational";
+import { saveBookedFilmsToLocalStorage } from "./utils/localStorageUtils";
+
+
 const FilmDetails: React.FC = () => {
   const { filmId } = useParams<{ filmId?: string }>();
-  const { data: filmDetails } = useGetSingleFilm(filmId || "");
+  const safeFilmId = filmId || ""; 
 
+  const { data: filmDetails } = useGetSingleFilm(safeFilmId);
   const [showForm, setShowForm] = useState(false);
 
   const handleBookNowClick = () => {
     setShowForm(true);
   };
 
-  const handleFormSubmit = (formData: ReservationFormData) => {
+  const handleFormSubmit = async (formData: ReservationFormData) => {
     console.log("Form submitted!", formData);
-    setShowForm(false);
+    
+    try {
+      const response = await fetch("API_ENDPOINT/tickets", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          filmId: safeFilmId,
+          ...formData,
+        }),
+      });
+      if (response.ok) {
+        console.log("Ticket successfully booked!");
+        saveBookedFilmsToLocalStorage([safeFilmId]); 
+      } else {
+        console.error("Failed to book ticket:", response.statusText);
+      }
+    } catch (error) {
+      console.error("Error booking ticket:", error);
+    }
   };
 
   const price = "700 All";
