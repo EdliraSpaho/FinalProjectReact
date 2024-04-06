@@ -19,6 +19,9 @@ const ListOfFilms: React.FC<ListOfFilmsProps> = ({ searchQuery }) => {
     film.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  console.log(filteredFilms);
+  
+
   return (
     <div className={styles.listOfFilmsContainer}>
       <div className={styles.filmsGrid}>

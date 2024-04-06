@@ -16,18 +16,21 @@ font-family: 'Times New Roman', Times, serif;
 }
 
 .logo {
-  width: 100px;
+  width: 150px;
   height: 80px;
 }
 
 .searchInput {
   border-radius: 20px;
   padding: 5px;
+  width: 300px;
+  height: 25px;
 }
 .linksContainer {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .linksContainer h1 a {
