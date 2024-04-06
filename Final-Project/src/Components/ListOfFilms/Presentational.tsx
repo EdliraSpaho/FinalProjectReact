@@ -5,7 +5,7 @@ import styles from "./Styles.module.css";
 
 interface ListOfFilmsProps {
   searchQuery: string;
-  favoriteFilms: string[]; 
+  
 }
 const ListOfFilms: React.FC<ListOfFilmsProps> = ({ searchQuery }) => {
   const { data: listOfFilms } = useGetFilms();
@@ -33,7 +33,7 @@ const ListOfFilms: React.FC<ListOfFilmsProps> = ({ searchQuery }) => {
         imageUrl={film.image}
         onFavoriteToggle={() => {}} 
         isFavorite={false} 
-        favoriteFilms={[]} 
+         
       />
         ))}
       </div>
