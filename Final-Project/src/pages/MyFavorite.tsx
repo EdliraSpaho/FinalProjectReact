@@ -26,7 +26,7 @@ const MyFavorite: React.FC = () => {
 
   return (
     <div>
-      <h1>My Favorite Films</h1>
+      <h2>My Favorite Films</h2>
       <ListOfFavoriteFilms films={favoriteFilms} />
     </div>
   );

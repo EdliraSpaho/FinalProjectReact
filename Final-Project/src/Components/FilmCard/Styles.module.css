@@ -1,4 +1,7 @@
-.filmCard {
+
+body {
+  background-color: rgb(242, 244, 245); 
+}.filmCard {
   width: 300px;
   border-radius: 20px;
   overflow: hidden;

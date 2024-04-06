@@ -1,11 +1,17 @@
-
 .list {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 5px; 
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
   padding: 0;
+  margin: 0;
 }
 
 .listItem {
-  list-style: none; 
+  list-style: none;
+}
+h2 {
+  margin-bottom: -5px;
+  text-align: center;
+  font-family: "Gwendolyn", cursive;
+  font-weight: bold;
 }
