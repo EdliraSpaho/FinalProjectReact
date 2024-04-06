@@ -19,7 +19,6 @@ const ListOfFavoriteFilms: React.FC<ListOfFavoriteFilmsProps> = ({ films }) => {
           imageUrl={film.image}
           isFavorite={true}
           onFavoriteToggle={() => {}}
-          favoriteFilms={[]}
         />
       ))}
     </ul>

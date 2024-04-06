@@ -3,7 +3,7 @@ import { Card } from "antd";
 import { useNavigate } from "react-router-dom";
 import styles from "./Styles.module.css";
 import { HeartFilled, HeartOutlined } from "@ant-design/icons";
-import { saveFavoriteFilmsToLocalStorage } from "../../pages/utils/localStorageUtils";
+import { getFavoriteFilmsFromLocalStorage, saveFavoriteFilmsToLocalStorage } from "../../pages/utils/localStorageUtils";
 
 interface Props {
   id: string;
@@ -13,13 +13,12 @@ interface Props {
   onFavoriteToggle: (id: string) => void;
 }
 
-const FilmCard: React.FC<Props & { favoriteFilms: string[] }> = ({
+const FilmCard: React.FC<Props> = ({
   id,
   title,
   imageUrl,
   isFavorite,
   onFavoriteToggle,
-  favoriteFilms = [],
 }) => {
   const [liked, setLiked] = useState<boolean>(isFavorite);
   const navigate = useNavigate();
@@ -30,6 +29,10 @@ const FilmCard: React.FC<Props & { favoriteFilms: string[] }> = ({
     e.stopPropagation();
     setLiked(!liked);
     onFavoriteToggle(id);
+    const favoriteFilms = getFavoriteFilmsFromLocalStorage()
+
+    console.log(favoriteFilms, liked);
+    
     const updatedFavoriteFilms = liked
       ? favoriteFilms.filter((filmId) => filmId !== id)
       : [...favoriteFilms, id];
